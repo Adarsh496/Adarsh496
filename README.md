@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @Adarsh496
 - 👀 I’m interested in Development
 - 🌱 I’m currently learning Python Basics
-- 📫 My disord:- adarsh_76
+- 📫 My disord:- screenyshadow
 - 😄 Pronouns: He/Him
 
 <!---
