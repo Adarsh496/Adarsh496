@@ -1,42 +1,78 @@
-<h1 align="center">Adarsh Raj</h1>
 
-<h2> 𝐇𝐞𝐥𝐥𝐨 𝐭𝐡𝐞𝐫𝐞, 𝐟𝐞𝐥𝐥𝐨𝐰 <𝚌𝚘𝚍𝚎𝚛𝚜/>! <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px"></h2>
+<br/>
 
-<h3 align="center">Building bots, exploring cybersecurity, and creating digital experiences.</h3>
-
-<img align='right' src='https://user-images.githubusercontent.com/5713670/87202985-820dcb80-c2b6-11ea-9f56-7ec461c497c3.gif' width='200"'>
-
-
-- 🌱 I’m currently learning **Cybersecurity, Networking, Linux & Advanced Python**
-
-- 👯 I’m looking to collaborate on **Cybersecurity Tools, Discord Bots & Open Source Projects**
-
-- 🤝 I’m looking for help with **Backend Scaling, Security Research & Advanced Networking**
-
-- 💬 Ask me about **Discord Bots, JavaScript, Minecraft Servers, Automation & AI**
-
-- 📫 How to reach me **rajadarsh2233@gmail.com**
-
-- ⚡ Fun fact **I play Guitar And Minecraft**
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/adarshraj76" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="adarshraj76" height="30" width="40" /></a>
-<a href="https://instagram.com/adarshraj.76" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="adarshraj.76" height="30" width="40" /></a>
-<a href="https://discord.gg/1246840865612370041" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="1246840865612370041" height="30" width="40" /></a>
+<p align="center">
+  <a href="https://readme-typing-svg.demolab.com">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=388BFD&center=true&width=600&lines=Hey+there%2C+I'm+Adarsh+%F0%9F%91%8B;Cybersecurity+%7C+Python+%7C+Linux;Building+bots+%26+breaking+things;Always+learning%2C+always+hacking" alt="Typing SVG" />
+  </a>
 </p>
 
-<h3 align="left">Languages & Tools:</h3>
 <p align="center">
-  
-[![My Skills](https://skillicons.dev/icons?i=python,js,html,css,linux,arch,discord,bots,github,mint,ps,replit,ubuntu,vscode,)](https://skillicons.dev)
-
-
-
-<h3 align="left">Statistics:</h3>
-<p align="center">
-  <img src="https://github-readme-stats-fast.vercel.app/api?username=adarsh496&show_icons=true&theme=tokyonight&rank_icon=github&border_radius=10&show=reviews,discussions" alt="Adarsh's GitHub Stats" height="180" />
-  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=adarsh496&layout=compact&theme=tokyonight&border_radius=10&hide=css,html" alt="Adarsh's Top Languages" height="180" />
+  <img src="https://komarev.com/ghpvc/?username=Adarsh496&color=388bfd&style=flat-square&label=profile+views" />
 </p>
 
-<img src="https://raw.githubusercontent.com/adarsh496/adarsh496/main/fedora-boot.svg" width="100%"/>
+---
+
+```bash
+┌──(adarsh@fedora)-[~]
+└─$ whoami
+```
+> Cybersecurity explorer · Python enthusiast · Linux nerd · Bot builder · Guitar player · Minecrafter
+
+---
+
+```bash
+┌──(adarsh@fedora)-[~]
+└─$ cat about.txt
+```
+
+- 🌱 Currently learning &nbsp;**Cybersecurity, Networking, Linux & Advanced Python**
+- 👯 Looking to collaborate on &nbsp;**Cybersecurity Tools, Discord Bots & Open Source**
+- 🤝 Looking for help with &nbsp;**Backend Scaling, Security Research & Advanced Networking**
+- 💬 Ask me about &nbsp;**Discord Bots, JavaScript, Minecraft Servers, Automation & AI**
+- 📫 Reach me at &nbsp;**rajadarsh2233@gmail.com**
+- ⚡ Fun fact &nbsp;**I play Guitar and Minecraft**
+
+---
+
+```bash
+┌──(adarsh@fedora)-[~]
+└─$ ls ./skills/
+```
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=python,js,html,css,linux,arch,discord,github,mint,ubuntu,vscode,replit,ps" />
+  </a>
+</p>
+
+---
+
+```bash
+┌──(adarsh@fedora)-[~]
+└─$ cat ./connect/social.json
+```
+
+<p align="center">
+  <a href="https://linkedin.com/in/adarshraj76" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="https://instagram.com/adarshraj.76" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="https://discord.gg/1246840865612370041" target="_blank">
+    <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/adarsh496/adarsh496/main/fedora-boot.svg" width="100%"/>
+</p>
+
+<p align="center">
+  <sub>adarsh@fedora · kernel 6.12.0 · always online</sub>
+</p>
