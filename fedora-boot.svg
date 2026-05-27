@@ -1,117 +1,76 @@
-<svg width="100%" viewBox="0 0 690 370" role="img" xmlns="http://www.w3.org/2000/svg" style="">
-<title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Fedora Linux 42 Terminal Boot</title>
-<desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Animated terminal window showing Fedora Linux 42 boot sequence in GitHub dark theme</desc>
+<svg width="100%" viewBox="0 0 680 360" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Fedora Linux 42 Terminal Boot</title>
 <defs>
-  
+  <style>
+    @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+    @keyframes scanMove { 0%{transform:translateY(0)} 100%{transform:translateY(360px)} }
+    @keyframes flicker { 0%,100%{opacity:1} 91%{opacity:0.97} 93%{opacity:0.93} 95%{opacity:0.98} }
+    @keyframes typeIn1  { 0%,4%{opacity:0}   5%,100%{opacity:1} }
+    @keyframes typeIn2  { 0%,12%{opacity:0}  13%,100%{opacity:1} }
+    @keyframes typeIn3  { 0%,20%{opacity:0}  21%,100%{opacity:1} }
+    @keyframes typeIn4  { 0%,29%{opacity:0}  30%,100%{opacity:1} }
+    @keyframes typeIn5  { 0%,38%{opacity:0}  39%,100%{opacity:1} }
+    @keyframes typeIn6  { 0%,47%{opacity:0}  48%,100%{opacity:1} }
+    @keyframes typeIn7  { 0%,56%{opacity:0}  57%,100%{opacity:1} }
+    @keyframes typeIn8  { 0%,65%{opacity:0}  66%,100%{opacity:1} }
+    @keyframes typeIn9  { 0%,74%{opacity:0}  75%,100%{opacity:1} }
+    @keyframes typeIn10 { 0%,83%{opacity:0}  84%,100%{opacity:1} }
+    @keyframes barGrow  { 0%{width:0px} 30%{width:60px} 55%{width:170px} 75%{width:290px} 90%,100%{width:430px} }
+    .flicker   { animation: flicker 9s infinite }
+    .scan-line { animation: scanMove 4s linear infinite }
+    .cursor    { animation: blink 1s step-end infinite }
+    .l1  { animation: typeIn1  5.5s ease-out infinite }
+    .l2  { animation: typeIn2  5.5s ease-out infinite }
+    .l3  { animation: typeIn3  5.5s ease-out infinite }
+    .l4  { animation: typeIn4  5.5s ease-out infinite }
+    .l5  { animation: typeIn5  5.5s ease-out infinite }
+    .l6  { animation: typeIn6  5.5s ease-out infinite }
+    .l7  { animation: typeIn7  5.5s ease-out infinite }
+    .l8  { animation: typeIn8  5.5s ease-out infinite }
+    .l9  { animation: typeIn9  5.5s ease-out infinite }
+    .l10 { animation: typeIn10 5.5s ease-out infinite }
+    .bar { animation: barGrow  5.5s ease-in-out infinite }
+  </style>
   <pattern id="scanlines" x="0" y="0" width="680" height="4" patternUnits="userSpaceOnUse">
-    <rect x="0" y="0" width="680" height="2" fill="#000" opacity="0.12"/>
+    <rect x="0" y="0" width="680" height="2" fill="#000000" opacity="0.12"/>
   </pattern>
   <clipPath id="win-clip">
     <rect x="0" y="0" width="680" height="360" rx="10"/>
   </clipPath>
 </defs>
 
-<g clip-path="url(#win-clip)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.975265;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+<g class="flicker" clip-path="url(#win-clip)">
+  <rect width="680" height="360" rx="10" fill="#010409"/>
+  <rect x="0" y="0" width="680" height="36" fill="#161b22"/>
+  <line x1="0" y1="36" x2="680" y2="36" stroke="#30363d" stroke-width="1"/>
+  <circle cx="24" cy="18" r="6" fill="#ff5f57"/>
+  <circle cx="44" cy="18" r="6" fill="#febc2e"/>
+  <circle cx="64" cy="18" r="6" fill="#28c840"/>
+  <text x="340" y="23" text-anchor="middle" font-family="Courier New,monospace" font-size="12" fill="#388bfd" letter-spacing="2">fedora@localhost -- bash -- 80x24</text>
 
-  <!-- Window background -->
-  <rect width="680" height="360" rx="10" fill="#010409" style="fill:rgb(1, 4, 9);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
-  <!-- Title bar -->
-  <rect x="0" y="0" width="680" height="36" fill="#161b22" style="fill:rgb(22, 27, 34);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <line x1="0" y1="36" x2="680" y2="36" stroke="#30363d" stroke-width="1" style="fill:rgb(0, 0, 0);stroke:rgb(48, 54, 61);color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
-  <!-- Traffic lights -->
-  <circle cx="24" cy="18" r="6" fill="#ff5f57" style="fill:rgb(255, 95, 87);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <circle cx="44" cy="18" r="6" fill="#febc2e" style="fill:rgb(254, 188, 46);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <circle cx="64" cy="18" r="6" fill="#28c840" style="fill:rgb(40, 200, 64);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
-  <!-- Title -->
-  <text x="340" y="23" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="#388bfd" letter-spacing="2" style="fill:rgb(56, 139, 253);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, monospace;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">fedora@localhost — bash — 80×24</text>
-
-  <!-- Terminal content -->
-  <g font-family="'Courier New',Courier,monospace" font-size="13" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-
-    <text x="28" y="68" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-      <tspan fill="#3fb950" style="fill:rgb(63, 185, 80);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">BIOS v2.42  </tspan>
-      <tspan fill="#8b949e" style="fill:rgb(139, 148, 158);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">Checking hardware integrity...</tspan>
+  <g font-family="Courier New,Courier,monospace" font-size="13">
+    <text x="28" y="68"  class="l1"><tspan fill="#3fb950">BIOS v2.42  </tspan><tspan fill="#8b949e">Checking hardware integrity...</tspan></text>
+    <text x="28" y="86"  class="l2"><tspan fill="#3fb950">MEM   </tspan><tspan fill="#8b949e">16384 MB OK -- ECC clean</tspan></text>
+    <text x="28" y="104" class="l3"><tspan fill="#3fb950">CPU   </tspan><tspan fill="#8b949e">AMD Ryzen 7 5800X @ 3.80GHz [8C/16T]</tspan></text>
+    <text x="28" y="122" class="l4"><tspan fill="#3fb950">DISK  </tspan><tspan fill="#8b949e">/dev/nvme0n1 -- 512GB -- GPT detected</tspan></text>
+    <line x1="28" y1="133" x2="652" y2="133" stroke="#21262d" stroke-width="0.8" class="l4"/>
+    <text x="28" y="151" class="l5"><tspan fill="#388bfd">&#x25B6; </tspan><tspan fill="#c9d1d9">Booting </tspan><tspan fill="#388bfd">Fedora Linux 42</tspan><tspan fill="#c9d1d9">...</tspan></text>
+    <text x="28" y="169" class="l6"><tspan fill="#3fb950">[  OK  ] </tspan><tspan fill="#8b949e">systemd 256 running -- PID 1</tspan></text>
+    <text x="28" y="187" class="l7"><tspan fill="#3fb950">[  OK  ] </tspan><tspan fill="#8b949e">Started udev Kernel Device Manager</tspan></text>
+    <text x="28" y="205" class="l8"><tspan fill="#3fb950">[  OK  ] </tspan><tspan fill="#8b949e">Mounted /boot/efi -- vfat OK</tspan></text>
+    <text x="28" y="223" class="l9"><tspan fill="#3fb950">[  OK  ] </tspan><tspan fill="#8b949e">Reached target Network Online</tspan></text>
+    <text x="28" y="241" class="l10"><tspan fill="#3fb950">[  OK  ] </tspan><tspan fill="#8b949e">Started GNOME Display Manager</tspan></text>
+    <text x="28" y="268" class="l10" fill="#484f58">Loading:  [</text>
+    <rect x="117" y="256" height="13" rx="1" fill="#388bfd" opacity="0.9" class="bar"/>
+    <text x="554" y="268" class="l10" fill="#484f58">]</text>
+    <text x="28" y="298" class="l10">
+      <tspan fill="#388bfd">user</tspan><tspan fill="#484f58">@</tspan><tspan fill="#3fb950">fedora</tspan><tspan fill="#484f58">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#484f58">$ </tspan><tspan class="cursor" fill="#c9d1d9">&#x2588;</tspan>
     </text>
-
-    <text x="28" y="86" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-      <tspan fill="#3fb950" style="fill:rgb(63, 185, 80);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">MEM   </tspan>
-      <tspan fill="#8b949e" style="fill:rgb(139, 148, 158);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">16384 MB OK — ECC clean</tspan>
-    </text>
-
-    <text x="28" y="104" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-      <tspan fill="#3fb950" style="fill:rgb(63, 185, 80);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">CPU   </tspan>
-      <tspan fill="#8b949e" style="fill:rgb(139, 148, 158);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">AMD Ryzen 7 5800X @ 3.80GHz [8C/16T]</tspan>
-    </text>
-
-    <text x="28" y="122" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-      <tspan fill="#3fb950" style="fill:rgb(63, 185, 80);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">DISK  </tspan>
-      <tspan fill="#8b949e" style="fill:rgb(139, 148, 158);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">/dev/nvme0n1 — 512GB — GPT detected</tspan>
-    </text>
-
-    <line x1="28" y1="133" x2="652" y2="133" stroke="#21262d" stroke-width="0.8" style="fill:rgb(0, 0, 0);stroke:rgb(33, 38, 45);color:rgb(251, 251, 254);stroke-width:0.8px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
-    <text x="28" y="151" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-      <tspan fill="#388bfd" style="fill:rgb(56, 139, 253);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">▶ </tspan>
-      <tspan fill="#c9d1d9" style="fill:rgb(201, 209, 217);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">Booting </tspan>
-      <tspan fill="#388bfd" style="fill:rgb(56, 139, 253);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">Fedora Linux 42</tspan>
-      <tspan fill="#c9d1d9" style="fill:rgb(201, 209, 217);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">...</tspan>
-    </text>
-
-    <text x="28" y="169" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-      <tspan fill="#3fb950" style="fill:rgb(63, 185, 80);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">[  OK  ] </tspan>
-      <tspan fill="#8b949e" style="fill:rgb(139, 148, 158);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">systemd 256 running — PID 1</tspan>
-    </text>
-
-    <text x="28" y="187" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-      <tspan fill="#3fb950" style="fill:rgb(63, 185, 80);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">[  OK  ] </tspan>
-      <tspan fill="#8b949e" style="fill:rgb(139, 148, 158);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">Started udev Kernel Device Manager</tspan>
-    </text>
-
-    <text x="28" y="205" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-      <tspan fill="#3fb950" style="fill:rgb(63, 185, 80);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">[  OK  ] </tspan>
-      <tspan fill="#8b949e" style="fill:rgb(139, 148, 158);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">Mounted /boot/efi — vfat OK</tspan>
-    </text>
-
-    <text x="28" y="223" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-      <tspan fill="#3fb950" style="fill:rgb(63, 185, 80);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">[  OK  ] </tspan>
-      <tspan fill="#8b949e" style="fill:rgb(139, 148, 158);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">Reached target Network Online</tspan>
-    </text>
-
-    <text x="28" y="241" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-      <tspan fill="#3fb950" style="fill:rgb(63, 185, 80);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">[  OK  ] </tspan>
-      <tspan fill="#8b949e" style="fill:rgb(139, 148, 158);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">Started GNOME Display Manager</tspan>
-    </text>
-
-    <!-- Progress bar -->
-    <text x="28" y="268" fill="#484f58" style="fill:rgb(72, 79, 88);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">Loading:  [</text>
-    <rect x="117" y="256" height="13" rx="1" fill="#388bfd" opacity="0.9" style="fill:rgb(56, 139, 253);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.9;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-    <text x="554" y="268" fill="#484f58" style="fill:rgb(72, 79, 88);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">]</text>
-
-    <!-- Prompt -->
-    <text x="28" y="298" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-      <tspan fill="#388bfd" style="fill:rgb(56, 139, 253);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">user</tspan>
-      <tspan fill="#484f58" style="fill:rgb(72, 79, 88);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">@</tspan>
-      <tspan fill="#3fb950" style="fill:rgb(63, 185, 80);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">fedora</tspan>
-      <tspan fill="#484f58" style="fill:rgb(72, 79, 88);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">:</tspan>
-      <tspan fill="#58a6ff" style="fill:rgb(88, 166, 255);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">~</tspan>
-      <tspan fill="#484f58" style="fill:rgb(72, 79, 88);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">$ </tspan>
-      <tspan fill="#c9d1d9" style="fill:rgb(201, 209, 217);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:13px;font-weight:400;text-anchor:start;dominant-baseline:auto">█</tspan>
-    </text>
-
-    <!-- Footer -->
-    <text x="340" y="342" text-anchor="middle" fill="#21262d" font-size="11" letter-spacing="1" style="fill:rgb(33, 38, 45);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Courier New&quot;, Courier, monospace;font-size:11px;font-weight:400;text-anchor:middle;dominant-baseline:auto">kernel 6.12.0-0.rc3.fc42.x86_64  |  uptime 0:00:04</text>
-
+    <text x="340" y="342" text-anchor="middle" fill="#21262d" font-size="11" letter-spacing="1">kernel 6.12.0-0.rc3.fc42.x86_64  |  uptime 0:00:04</text>
   </g>
 
-  <!-- Scanlines -->
-  <rect width="680" height="360" fill="url(#scanlines)" style="stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <rect x="0" y="0" width="680" height="3" fill="#388bfd" opacity="0.03" style="fill:rgb(56, 139, 253);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.03;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
-  <!-- Window border -->
-  <rect x="0" y="0" width="680" height="360" rx="10" fill="none" stroke="#30363d" stroke-width="1.5" style="fill:none;stroke:rgb(48, 54, 61);color:rgb(251, 251, 254);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
+  <rect width="680" height="360" fill="url(#scanlines)"/>
+  <rect x="0" y="0" width="680" height="3" fill="#388bfd" opacity="0.03" class="scan-line"/>
+  <rect x="0" y="0" width="680" height="360" rx="10" fill="none" stroke="#30363d" stroke-width="1.5"/>
 </g>
 </svg>
