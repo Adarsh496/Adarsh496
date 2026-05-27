@@ -64,7 +64,7 @@
     <rect x="117" y="256" height="13" rx="1" fill="#388bfd" opacity="0.9" class="bar"/>
     <text x="554" y="268" class="l10" fill="#484f58">]</text>
     <text x="28" y="298" class="l10">
-      <tspan fill="#388bfd">user</tspan><tspan fill="#484f58">@</tspan><tspan fill="#3fb950">fedora</tspan><tspan fill="#484f58">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#484f58">$ </tspan><tspan class="cursor" fill="#c9d1d9">&#x2588;</tspan>
+      <tspan fill="#388bfd">adarsh</tspan><tspan fill="#484f58">@</tspan><tspan fill="#3fb950">fedora</tspan><tspan fill="#484f58">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#484f58">$ </tspan><tspan class="cursor" fill="#c9d1d9">&#x2588;</tspan>
     </text>
     <text x="340" y="342" text-anchor="middle" fill="#21262d" font-size="11" letter-spacing="1">kernel 6.12.0-0.rc3.fc42.x86_64  |  uptime 0:00:04</text>
   </g>
