@@ -39,7 +39,4 @@
   <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=adarsh496&layout=compact&theme=tokyonight&border_radius=10&hide=css,html" alt="Adarsh's Top Languages" height="180" />
 </p>
 
-
 <img src="https://raw.githubusercontent.com/adarsh496/adarsh496/main/fedora-boot.svg" width="100%"/>
-
-
