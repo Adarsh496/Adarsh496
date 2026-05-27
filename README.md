@@ -40,6 +40,6 @@
 </p>
 
 
-<img src="fedora-boot.svg" width="100%"/>
+<img src="https://raw.githubusercontent.com/adarsh496/adarsh496/main/fedora-boot.svg" width="100%"/>
 
 
